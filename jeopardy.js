@@ -29,7 +29,7 @@ let categories = [];
 async function getCategoryIds() {
     let cat = [];
     for(let i = 0; i < 6; i++) {
-        let res = await axios.get('http://jservice.io/api/random');
+        let res = await axios.get('https://jservice.io/api/random');
     
         cat[i] = parseInt(res.data[0].category.id) ;
         //console.log(cat[i]);
@@ -51,10 +51,10 @@ async function getCategoryIds() {
  *///DONE
 
 async function getCategory(catId) {
-    let getTitle = await axios.get(`http://jservice.io/api/category?id=${catId}`);
+    let getTitle = await axios.get(`https://jservice.io/api/category?id=${catId}`);
     //console.log(getTitle);
     let title = getTitle.data.title;
-    console.log(title);
+    //console.log(title);
     let clues = []
     clues = getTitle.data.clues;
     let clueArr = [];
@@ -84,14 +84,14 @@ async function fillTable() {
     
     var ids = Array.from(await getCategoryIds());   
     
-    console.log(ids);
+    //console.log(ids);
 
     for (let i = 0; i < 5; i++) {
         
         data.push(await getCategory(ids[i])) ;
         
     }
-    console.log(data);
+    //console.log(data);
     
 
     var top = document.createElement("tr");
@@ -170,7 +170,7 @@ function handleClickQ(evt) {
     evt.preventDefault();
     
     let x = evt.target.id;
-    console.log('x is: ', x);
+    //console.log('x is: ', x);
     
     let clickedCell = document.getElementById(`${x}`);
 
