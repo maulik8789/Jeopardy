@@ -1,0 +1,49 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c */
+
+
+.cellHead{
+  background-color: #28a200;
+  height: 80px;
+  width: 250px;
+  font-size: large;
+  word-wrap: break-word;
+  text-align: center;
+  border-color: black;
+  border-width: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+.cell{
+  background-color: #74119c;
+  height: 80px;
+  width: 250px; 
+  word-wrap: break-word;
+  text-align: center;
+  border-color: black;
+  border-width: 10px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+#wait{
+  margin-left: 15%;
+}
+
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 40%;
+}
